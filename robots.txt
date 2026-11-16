@@ -1,0 +1,6 @@
+# DS2I — robots.txt
+# À COMPLÉTER : remplacer VOTRE-DOMAINE.fr par le domaine définitif
+User-agent: *
+Allow: /
+
+Sitemap: https://www.VOTRE-DOMAINE.fr/sitemap.xml
