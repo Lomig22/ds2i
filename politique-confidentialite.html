@@ -3,41 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO — ⚠️ À COMPLÉTER : remplacer « https://www.VOTRE-DOMAINE.fr » par le domaine définitif -->
   <title>Politique de confidentialité | DS2I — Stéphane Kittler</title>
   <meta name="description" content="Politique de confidentialité du site DS2I : données collectées, finalités, durées de conservation, vos droits RGPD et cookies.">
-  <link rel="canonical" href="https://www.VOTRE-DOMAINE.fr/politique-confidentialite.html">
+  <link rel="canonical" href="https://www.VOTRE-DOMAINE.fr/politique-confidentialite">
   <meta name="robots" content="index, follow">
+  <meta name="author" content="Stéphane Kittler">
   <meta name="theme-color" content="#0A0A0A">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="DS2I">
-  <meta property="og:title" content="Politique de confidentialité | DS2I">
-  <meta property="og:description" content="Politique de confidentialité du site DS2I.">
-  <meta property="og:url" content="https://www.VOTRE-DOMAINE.fr/politique-confidentialite.html">
+  <meta property="og:title" content="Politique de confidentialité | DS2I — Stéphane Kittler">
+  <meta property="og:description" content="Politique de confidentialité du site DS2I : données collectées, finalités, durées de conservation, vos droits RGPD et cookies.">
+  <meta property="og:url" content="https://www.VOTRE-DOMAINE.fr/politique-confidentialite">
   <meta property="og:image" content="https://www.VOTRE-DOMAINE.fr/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DS2I — DSI et RSSI à temps partagé pour PME et ETI">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Politique de confidentialité | DS2I">
-  <meta name="twitter:description" content="Politique de confidentialité du site DS2I.">
+  <meta name="twitter:title" content="Politique de confidentialité | DS2I — Stéphane Kittler">
+  <meta name="twitter:description" content="Politique de confidentialité du site DS2I : données collectées, finalités, durées de conservation, vos droits RGPD et cookies.">
   <meta name="twitter:image" content="https://www.VOTRE-DOMAINE.fr/assets/og-image.png">
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="preload" href="assets/fonts/montserrat-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- Police auto-hébergée (aucun appel à Google : plus rapide et conforme RGPD) -->
+  <link rel="preload" href="/assets/fonts/montserrat-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.VOTRE-DOMAINE.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Politique de confidentialité",
+          "item": "https://www.VOTRE-DOMAINE.fr/politique-confidentialite"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <!-- Active les animations uniquement si JavaScript est disponible -->
   <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
+  <!-- Sprite SVG : dégradés de la charte + motif du logo, réutilisés dans la page.
+       (Masqué visuellement mais pas en display:none, sinon les dégradés disparaissent.) -->
   <svg class="svg-sprite" aria-hidden="true" focusable="false">
     <defs>
+      <linearGradient id="grad-icon" gradientUnits="userSpaceOnUse" x1="2" y1="4" x2="22" y2="20">
+        <stop offset="0" stop-color="#7B3AED"/><stop offset=".45" stop-color="#1E5BFF"/><stop offset="1" stop-color="#18C8FF"/>
+      </linearGradient>
       <linearGradient id="grad-mark" gradientUnits="userSpaceOnUse" x1="4" y1="20" x2="112" y2="100">
-        <stop offset="0" stop-color="#7B3AED"/>
-        <stop offset=".45" stop-color="#1E5BFF"/>
-        <stop offset="1" stop-color="#18C8FF"/>
+        <stop offset="0" stop-color="#7B3AED"/><stop offset=".45" stop-color="#1E5BFF"/><stop offset="1" stop-color="#18C8FF"/>
       </linearGradient>
     </defs>
+    <!-- Le « D » en pistes de circuit imprimé -->
     <symbol id="ds2i-mark" viewBox="0 0 120 120">
       <g fill="none" stroke="url(#grad-mark)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
         <path d="M24 30V104H62A44 44 0 0 0 62 16H40"/>
@@ -55,26 +98,32 @@
 
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
+  <!-- ============================================================
+       EN-TÊTE FIXE (identique sur toutes les pages)
+       ============================================================ -->
   <header class="site-header" id="haut">
     <div class="container site-header__inner">
-      <a class="brand" href="index.html" aria-label="DS2I, retour à l’accueil">
+      <!-- Logo : pour utiliser le fichier original, remplacer ce bloc par
+           <img src="/assets/logo-ds2i.png" alt="DS2I" height="44"> -->
+      <a class="brand" href="/" aria-label="DS2I, accueil">
         <svg class="brand__mark" aria-hidden="true"><use href="#ds2i-mark"/></svg>
         <span class="brand__name">DS2I</span>
       </a>
+
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="visually-hidden">Ouvrir le menu</span>
       </button>
+
       <nav class="main-nav" id="menu-principal" aria-label="Navigation principale">
         <ul class="main-nav__list">
-          <li><a href="index.html#constat">Le constat</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#methode">Méthode</a></li>
-          <li><a href="index.html#qui-suis-je">Qui suis-je</a></li>
-          <li><a href="index.html#guide">Guide gratuit</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/methode">Méthode</a></li>
+          <li><a href="/qui-suis-je">Qui suis-je</a></li>
+          <li><a href="/guide">Guide gratuit</a></li>
+          <li><a href="/faq">FAQ</a></li>
         </ul>
-        <a class="btn btn--primary btn--sm js-calendly" href="https://calendly.com/s-kittler/30min" target="_blank" rel="noopener">Réserver mon audit offert</a>
+        <a class="btn btn--primary js-calendly btn--sm" href="https://calendly.com/s-kittler/30min" target="_blank" rel="noopener">Réserver mon audit offert</a>
       </nav>
     </div>
   </header>
@@ -153,24 +202,38 @@
     </div>
   </main>
 
+  <!-- ============================================================
+       PIED DE PAGE
+       ============================================================ -->
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
-        <a class="brand" href="index.html" aria-label="DS2I, retour à l’accueil">
+        <a class="brand" href="/" aria-label="DS2I, accueil">
           <svg class="brand__mark" aria-hidden="true"><use href="#ds2i-mark"/></svg>
           <span class="brand__name">DS2I</span>
         </a>
         <p class="site-footer__tagline">DS2I — Direction des Systèmes, Sécurité &amp; Innovation Informatique</p>
+        <address class="site-footer__address">
+          <strong>Stéphane Kittler</strong><br>
+          155&nbsp;cours Tolstoï<br>
+          69100&nbsp;Villeurbanne
+        </address>
       </div>
-      <address class="site-footer__address">
-        <strong>Stéphane Kittler</strong><br>
-        155&nbsp;cours Tolstoï<br>
-        69100&nbsp;Villeurbanne
-      </address>
-      <nav class="site-footer__links" aria-label="Liens du pied de page">
+      <nav class="site-footer__links" aria-label="Plan du site">
+        <p class="site-footer__heading">Le cabinet</p>
         <ul>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
-          <li><a href="politique-confidentialite.html" aria-current="page">Politique de confidentialité</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/methode">Méthode</a></li>
+          <li><a href="/qui-suis-je">Qui suis-je</a></li>
+          <li><a href="/guide">Guide gratuit</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__links" aria-label="Informations légales">
+        <p class="site-footer__heading">Informations</p>
+        <ul>
+          <li><a href="/mentions-legales">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite" aria-current="page">Politique de confidentialité</a></li>
           <!-- À COMPLÉTER : URL du profil LinkedIn de Stéphane Kittler -->
           <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
@@ -181,6 +244,11 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
+  <!-- Bouton d'audit collant sur mobile (apparaît après l'en-tête de page) -->
+  <div class="sticky-cta" aria-hidden="true">
+    <a class="btn btn--primary btn--block js-calendly" href="https://calendly.com/s-kittler/30min" target="_blank" rel="noopener" tabindex="-1">Réserver mon audit offert</a>
+  </div>
+
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

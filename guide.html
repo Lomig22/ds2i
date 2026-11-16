@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO — ⚠️ À COMPLÉTER : remplacer « https://www.VOTRE-DOMAINE.fr » par le domaine définitif -->
+  <title>Guide gratuit : votre entreprise tiendrait-elle une cyberattaque ? | DS2I</title>
+  <meta name="description" content="Téléchargez le guide gratuit : 10 questions pour savoir en 10 minutes si votre entreprise tiendrait une cyberattaque, votre score de maturité, un plan d’action sur 30 jours et 4 modèles.">
+  <link rel="canonical" href="https://www.VOTRE-DOMAINE.fr/guide">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Stéphane Kittler">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="DS2I">
+  <meta property="og:title" content="Guide gratuit : votre entreprise tiendrait-elle une cyberattaque ? | DS2I">
+  <meta property="og:description" content="Téléchargez le guide gratuit : 10 questions pour savoir en 10 minutes si votre entreprise tiendrait une cyberattaque, votre score de maturité, un plan d’action sur 30 jours et 4 modèles.">
+  <meta property="og:url" content="https://www.VOTRE-DOMAINE.fr/guide">
+  <meta property="og:image" content="https://www.VOTRE-DOMAINE.fr/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DS2I — DSI et RSSI à temps partagé pour PME et ETI">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guide gratuit : votre entreprise tiendrait-elle une cyberattaque ? | DS2I">
+  <meta name="twitter:description" content="Téléchargez le guide gratuit : 10 questions pour savoir en 10 minutes si votre entreprise tiendrait une cyberattaque, votre score de maturité, un plan d’action sur 30 jours et 4 modèles.">
+  <meta name="twitter:image" content="https://www.VOTRE-DOMAINE.fr/assets/og-image.png">
+
+  <!-- Icônes -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- Police auto-hébergée (aucun appel à Google : plus rapide et conforme RGPD) -->
+  <link rel="preload" href="/assets/fonts/montserrat-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.VOTRE-DOMAINE.fr/#ds2i",
+      "name": "DS2I",
+      "alternateName": "DS2I — Direction des Systèmes, Sécurité & Innovation Informatique",
+      "description": "DSI et RSSI à temps partagé et de transition pour les PME et ETI : pilotage informatique, cybersécurité, conformité NIS2 et ISO 27001, plans de reprise et de continuité d'activité.",
+      "url": "https://www.VOTRE-DOMAINE.fr/",
+      "logo": "https://www.VOTRE-DOMAINE.fr/assets/logo-ds2i.png",
+      "image": "https://www.VOTRE-DOMAINE.fr/assets/og-image.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "155 cours Tolstoï",
+        "postalCode": "69100",
+        "addressLocality": "Villeurbanne",
+        "addressCountry": "FR"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      },
+      "founder": {
+        "@id": "https://www.VOTRE-DOMAINE.fr/#stephane-kittler"
+      },
+      "knowsAbout": [
+        "DSI à temps partagé",
+        "RSSI à temps partagé",
+        "DSI de transition",
+        "Cybersécurité",
+        "NIS2",
+        "ISO 27001",
+        "Plan de reprise d'activité",
+        "Plan de continuité d'activité"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "DSI à temps partagé",
+            "url": "https://www.VOTRE-DOMAINE.fr/services#dsi-temps-partage"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "RSSI à temps partagé",
+            "url": "https://www.VOTRE-DOMAINE.fr/services#rssi-temps-partage"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "DSI ou RSSI de transition",
+            "url": "https://www.VOTRE-DOMAINE.fr/services#transition"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Conformité NIS2, ISO 27001 et plans de reprise",
+            "url": "https://www.VOTRE-DOMAINE.fr/services#conformite"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.VOTRE-DOMAINE.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guide gratuit",
+          "item": "https://www.VOTRE-DOMAINE.fr/guide"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <!-- Active les animations uniquement si JavaScript est disponible -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <!-- Sprite SVG : dégradés de la charte + motif du logo, réutilisés dans la page.
+       (Masqué visuellement mais pas en display:none, sinon les dégradés disparaissent.) -->
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="grad-icon" gradientUnits="userSpaceOnUse" x1="2" y1="4" x2="22" y2="20">
+        <stop offset="0" stop-color="#7B3AED"/><stop offset=".45" stop-color="#1E5BFF"/><stop offset="1" stop-color="#18C8FF"/>
+      </linearGradient>
+      <linearGradient id="grad-mark" gradientUnits="userSpaceOnUse" x1="4" y1="20" x2="112" y2="100">
+        <stop offset="0" stop-color="#7B3AED"/><stop offset=".45" stop-color="#1E5BFF"/><stop offset="1" stop-color="#18C8FF"/>
+      </linearGradient>
+    </defs>
+    <!-- Le « D » en pistes de circuit imprimé -->
+    <symbol id="ds2i-mark" viewBox="0 0 120 120">
+      <g fill="none" stroke="url(#grad-mark)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 30V104H62A44 44 0 0 0 62 16H40"/>
+        <path d="M38 44V90H62A30 30 0 0 0 62 30H54"/>
+        <path d="M52 58V76H62A16 16 0 0 0 62 44"/>
+        <path d="M8 60H24"/>
+      </g>
+      <g fill="#0A0A0A" stroke="url(#grad-mark)" stroke-width="3.5">
+        <circle cx="24" cy="26" r="5"/><circle cx="36" cy="16" r="5"/><circle cx="38" cy="40" r="5"/>
+        <circle cx="50" cy="30" r="5"/><circle cx="52" cy="54" r="5"/><circle cx="62" cy="44" r="5"/>
+        <circle cx="8" cy="60" r="5"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- ============================================================
+       EN-TÊTE FIXE (identique sur toutes les pages)
+       ============================================================ -->
+  <header class="site-header" id="haut">
+    <div class="container site-header__inner">
+      <!-- Logo : pour utiliser le fichier original, remplacer ce bloc par
+           <img src="/assets/logo-ds2i.png" alt="DS2I" height="44"> -->
+      <a class="brand" href="/" aria-label="DS2I, accueil">
+        <svg class="brand__mark" aria-hidden="true"><use href="#ds2i-mark"/></svg>
+        <span class="brand__name">DS2I</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Ouvrir le menu</span>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="main-nav__list">
+          <li><a href="/services">Services</a></li>
+          <li><a href="/methode">Méthode</a></li>
+          <li><a href="/qui-suis-je">Qui suis-je</a></li>
+          <li><a href="/guide" aria-current="page">Guide gratuit</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn--primary js-calendly btn--sm" href="https://calendly.com/s-kittler/30min" target="_blank" rel="noopener">Réserver mon audit offert</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero page-hero--guide" aria-labelledby="page-titre">
+      <div class="halo halo--violet" aria-hidden="true"></div>
+      <div class="halo halo--cyan" aria-hidden="true"></div>
+      <div class="container">
+        <div class="guide" id="guide">
+          <div class="guide__mockup" aria-hidden="true">
+            <div class="book">
+              <div class="book__cover">
+                <svg class="book__mark"><use href="#ds2i-mark"/></svg>
+                <p class="book__brand">DS2I</p>
+                <p class="book__title">Votre entreprise tiendrait-elle une cyberattaque&nbsp;?</p>
+                <p class="book__subtitle">10&nbsp;questions pour le savoir en 10&nbsp;minutes</p>
+                <span class="book__line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="guide__content">
+            <p class="eyebrow">Guide gratuit</p>
+            <h1 class="page-hero__title" id="page-titre">Votre entreprise tiendrait-elle une cyberattaque&nbsp;?</h1>
+            <p class="guide__lead">10&nbsp;questions pour le savoir en 10&nbsp;minutes, votre score de maturité, un plan d’action sur 30&nbsp;jours et 4&nbsp;modèles prêts à l’emploi.</p>
+
+            <form class="lead-form" id="lead-form" novalidate>
+              <div class="field">
+                <label for="prenom">Prénom</label>
+                <input id="prenom" name="prenom" type="text" autocomplete="given-name" required>
+                <p class="field__error" id="prenom-erreur" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="email">Email professionnel</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+                <p class="field__error" id="email-erreur" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="entreprise">Entreprise</label>
+                <input id="entreprise" name="entreprise" type="text" autocomplete="organization" required>
+                <p class="field__error" id="entreprise-erreur" aria-live="polite"></p>
+              </div>
+              <!-- Pot de miel anti-spam : invisible pour les humains -->
+              <div class="hp" aria-hidden="true">
+                <label for="site-web">Ne pas remplir</label>
+                <input id="site-web" name="site_web" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="field field--check">
+                <input id="consentement" name="consentement" type="checkbox" required>
+                <label for="consentement">J’accepte que DS2I utilise ces informations pour m’envoyer le guide et me recontacter au sujet de ses services. Je peux me désinscrire à tout moment. <a href="/politique-confidentialite">Politique de confidentialité</a></label>
+                <p class="field__error" id="consentement-erreur" aria-live="polite"></p>
+              </div>
+              <button class="btn btn--primary btn--lg btn--block" type="submit">Recevoir le guide gratuit</button>
+            </form>
+
+            <div class="lead-success" id="lead-success" tabindex="-1" hidden>
+              <p class="lead-success__title">Merci&nbsp;! Votre guide est en cours de téléchargement.</p>
+              <p>S’il ne démarre pas, <a href="/assets/DS2I_Guide_10_questions_cyberattaque.pdf" download>téléchargez-le ici</a>. Et pour aller plus loin, faisons le point ensemble en 30&nbsp;minutes.</p>
+              <a class="btn btn--primary js-calendly" href="https://calendly.com/s-kittler/30min" target="_blank" rel="noopener">Réserver mon audit offert</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="contenu-guide-titre">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Au sommaire</p>
+          <h2 class="section__title" id="contenu-guide-titre">Ce que vous trouverez dans le guide.</h2>
+        </div>
+        <ul class="grid grid--4">
+          <li class="card card--hover pain reveal"><svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M8 9.5h8M8 12.5h5"/></svg><h3 class="service__title">10&nbsp;questions</h3><p>Pour faire le point en 10&nbsp;minutes, sans jargon.</p></li>
+          <li class="card card--hover pain reveal"><svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17a8 8 0 1 1 16 0"/><path d="m12 17 4-5"/><path d="M12 17h.01"/></svg><h3 class="service__title">Votre score de maturité</h3><p>Pour savoir où vous en êtes.</p></li>
+          <li class="card card--hover pain reveal"><svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg><h3 class="service__title">Un plan d’action sur 30&nbsp;jours</h3><p>Pour savoir par où commencer.</p></li>
+          <li class="card card--hover pain reveal"><svg class="icon icon--lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="11" height="14" rx="1.5"/><path d="M9 21h9.5a1.5 1.5 0 0 0 1.5-1.5V8"/><path d="M7.5 8h4M7.5 11h4"/></svg><h3 class="service__title">4&nbsp;modèles prêts à l’emploi</h3><p>Pour passer à l’action tout de suite.</p></li>
+        </ul>
+        <div class="section__cta reveal">
+          <p>Vous préférez en parler de vive voix&nbsp;?</p>
+          <a class="btn btn--primary js-calendly" href="https://calendly.com/s-kittler/30min" target="_blank" rel="noopener">Réserver mon audit offert</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       PIED DE PAGE
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="brand" href="/" aria-label="DS2I, accueil">
+          <svg class="brand__mark" aria-hidden="true"><use href="#ds2i-mark"/></svg>
+          <span class="brand__name">DS2I</span>
+        </a>
+        <p class="site-footer__tagline">DS2I — Direction des Systèmes, Sécurité &amp; Innovation Informatique</p>
+        <address class="site-footer__address">
+          <strong>Stéphane Kittler</strong><br>
+          155&nbsp;cours Tolstoï<br>
+          69100&nbsp;Villeurbanne
+        </address>
+      </div>
+      <nav class="site-footer__links" aria-label="Plan du site">
+        <p class="site-footer__heading">Le cabinet</p>
+        <ul>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/methode">Méthode</a></li>
+          <li><a href="/qui-suis-je">Qui suis-je</a></li>
+          <li><a href="/guide" aria-current="page">Guide gratuit</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__links" aria-label="Informations légales">
+        <p class="site-footer__heading">Informations</p>
+        <ul>
+          <li><a href="/mentions-legales">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
+          <!-- À COMPLÉTER : URL du profil LinkedIn de Stéphane Kittler -->
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© <span class="js-year">2026</span> DS2I. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton d'audit collant sur mobile (apparaît après l'en-tête de page) -->
+  <div class="sticky-cta" aria-hidden="true">
+    <a class="btn btn--primary btn--block js-calendly" href="https://calendly.com/s-kittler/30min" target="_blank" rel="noopener" tabindex="-1">Réserver mon audit offert</a>
+  </div>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -18,7 +18,7 @@ const FORM_ENDPOINT = '';
 const CALENDLY_URL = 'https://calendly.com/s-kittler/30min';
 
 /** Chemin du guide PDF. */
-const GUIDE_PDF = 'assets/DS2I_Guide_10_questions_cyberattaque.pdf';
+const GUIDE_PDF = '/assets/DS2I_Guide_10_questions_cyberattaque.pdf';
 
 /** Scripts officiels du widget Calendly. */
 const CALENDLY_JS = 'https://assets.calendly.com/assets/external/widget.js';
@@ -209,11 +209,11 @@ function initReveal() {
 }
 
 /* --------------------------------------------------------------------------
-   4. BOUTON COLLANT MOBILE : visible après le hero, masqué près du CTA final
+   4. BOUTON COLLANT MOBILE : visible après l'en-tête de page, masqué près du CTA final
    -------------------------------------------------------------------------- */
 function initStickyCta() {
   const sticky = document.querySelector('.sticky-cta');
-  const hero = document.querySelector('.hero');
+  const hero = document.querySelector('.hero, .page-hero, .legal');
   const hideZones = document.querySelectorAll('#guide, #audit, .site-footer');
   if (!sticky || !hero || !('IntersectionObserver' in window)) return;
 
