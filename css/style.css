@@ -292,11 +292,11 @@ body.nav-open { overflow: hidden; }
     flex-direction: row; align-items: center; gap: 28px;
     opacity: 1; visibility: visible; transform: none; overflow: visible;
   }
-  /* Liens centrés sur la page, bouton calé à droite */
-  .site-header__inner { position: relative; }
-  .main-nav { flex: 1; justify-content: flex-end; }
+  /* Liens centrés dans l'espace libre entre le logo et le bouton :
+     même écart de chaque côté (l'écart nav ↔ bouton = l'écart logo ↔ nav). */
+  .main-nav { flex: 1; gap: 20px; }
   .main-nav__list {
-    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    flex: 1; justify-content: center;
     flex-direction: row; gap: clamp(18px, 1.9vw, 30px); white-space: nowrap;
   }
   .main-nav__list a {
